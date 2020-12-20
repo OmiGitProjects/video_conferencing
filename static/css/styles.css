@@ -26,3 +26,8 @@ body {
 h3{
     font-family: 'Rancho', cursive;
 }
+
+.video {
+    height: 300px;
+    width: 400px;
+}
