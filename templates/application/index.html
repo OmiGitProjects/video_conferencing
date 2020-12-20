@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Video Call {% endblock title %}
+
+{% block style_tags %} 
+
+<style>
+    .video {
+        height: 300px;
+        width: 400px;
+    }
+</style>
+
+{% endblock style_tags %}
+
+{% block content %}
+
+    <h3 class="text-center display-4 mb-4 text-white">Video Conferencing</h3>
+
+    <div class="alert alert-light" role="alert">
+        <h5 class="d-inline-block text-primary">Your Invite Code is : </h5>&nbsp;&nbsp;<h5 class="lead d-inline-block text-secondary font-weight-bold" id="show-peer"></h5>
+    </div>
+    <div style="display: flex; justify-content: space-around; margin: 10px;">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12">
+                <div class="mt-2" id="ourVideo"></div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12">
+                <div class="mt-2" id="remoteVideo"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center mt-3">
+        <input type="text" name="" id="peerID" class="form-control" placeholder="Enter Your Friend's Code"> <hr>
+        <button id="call-peer" class="btn btn-success">Call Friend</button>
+        <button id="shareScreen" class="btn btn-danger">Share Screen</button>
+    </div>
+
+{% endblock content %}
+
+{% block script_tags %} 
+
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+{% endblock script_tags %}

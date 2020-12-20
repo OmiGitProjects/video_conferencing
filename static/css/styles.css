@@ -1,0 +1,28 @@
+body {
+    /* background: linear-gradient(to right, rgb(70, 70, 243), rgb(201, 44, 201)); */
+    background-color: #ff751a;
+}
+
+#ourVideo{
+    background-color: wheat;
+    width: 300px;
+    height: 300px;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #e66917, #ff7d1c);
+    box-shadow:  5px 5px 10px #d66216, 
+                 -5px -5px 10px #ff881e;
+}
+
+#remoteVideo{
+    background-color: wheat;
+    width: 300px;
+    height: 300px;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #e66917, #ff7d1c);
+    box-shadow:  5px 5px 10px #d66216, 
+             -5px -5px 10px #ff881e;
+}
+
+h3{
+    font-family: 'Rancho', cursive;
+}
